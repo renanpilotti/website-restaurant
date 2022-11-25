@@ -156,5 +156,7 @@ nav {
 
     #cta {
         padding: 10% 0;
+        background-size: auto;
+        background-position: 70%;
     }
 }
