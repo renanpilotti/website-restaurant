@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>DNX Project</title>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/2979f56706.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 py-2">
+            <div class="container">
+
+                <a class="navbar-brand py-0 d-flex" href="/index.html">
+                    <img style="width:60px;" src="/images/logo.png" alt="logotipo">
+                    <span>Massa!</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link links" href="#sobre">Sobre nós</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link links" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link btn btn-outline-light rounded-0" href="/cart.html">
+                                Faça seu pedido
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="shop-bg text-white py-5">
+        <section id="menu" class="container text-center">
+            <h2 class="text-center fw-bold fs-1 text-light pt-5 pb-4">Monte seu prato</h2>
+
+            <hr class="featurette-divider w-50 mx-auto">
+
+            <div class="text-center px-5 py-2">
+                <h2 class="py-4 m-auto fs-3"><span class="text-danger fs-1 fw-bold">1</span> Escolha sua massa</h2>
+                <div class="row px-5 py-2">
+                    <div class="food massa col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <img class="rounded-circle" style="width:150px" src="/images/massa1.png" alt="Spaghetti">
+                        <div>
+                            <p class="">Spaghetti</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">R$ 20,90</p>
+                        </div>
+                    </div>
+                    <div class="food massa col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <img class="rounded-circle" style="width:150px" src="/images/massa2.png" alt="Macarroni">
+                        <div>
+                            <p class="">Macarroni</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">R$ 22,90</p>
+                        </div>
+                    </div>
+                    <div class="food massa col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <img class="rounded-circle" style="width:150px" src="/images/massa3.jpeg" alt="Fetuccini">
+                        <div>
+                            <p class="">Fetuccini</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">R$ 24,90</p>
+                        </div>
+                    </div>
+                    <div class="food massa col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <img class="rounded-circle" style="width:150px" src="/images/massa4.png" alt="Penne">
+                        <div>
+                            <p class="">Penne</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">R$ 24,90</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider mx-auto">
+            </div>
+
+
+            <div class="section text-center px-5 py-2">
+                <h2 class="py-4 m-auto fs-3"><span class="text-danger fs-1 fw-bold">2</span> Escolha seu molho</h2>
+                <div class="row px-5 py-2">
+                    <div class="food molho col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <img class="rounded-circle" style="width:150px" src="/images/molho1.png" alt="Molho Sugo">
+                        <div>
+                            <p class="">Molho Sugo</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">+ R$ 3,90</p>
+                        </div>
+                    </div>
+                    <div class="food molho col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <img class="rounded-circle" style="width:150px" src="/images/molho2.png" alt="Molho Pesto">
+                        <div>
+                            <p class="">Molho Pesto</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">+ R$ 4,90</p>
+                        </div>
+                    </div>
+                    <div class="food molho col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <img class="rounded-circle" style="width:150px" src="/images/molho3.png" alt="Molho Bechamel">
+                        <div>
+                            <p class="">Molho Bechamel</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">+ R$ 4,90</p>
+                        </div>
+                    </div>
+                    <div class="food molho col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <img class="rounded-circle" style="width:150px" src="/images/molho4.png" alt="Molho Mostarda">
+                        <div>
+                            <p class="">Molho Mostarda</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">+ R$ 6,90</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider mx-auto">
+            </div>
+
+
+            <div id="section3" class="section text-center px-5 py-2">
+                <h2 class="py-4 m-auto fs-3"><span class="text-danger fs-1 fw-bold">3</span> Escolha sua bebida</h2>
+                <div class="row px-5 mx-auto">
+                    <div class="food bebida col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <i style="font-size: 50px;" class="fa-solid fa-whiskey-glass"></i>
+                        <div>
+                            <p class="">Refrigerante</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">+ R$ 7,90</p>
+                        </div>
+                    </div>
+                    <div class="food bebida col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <i style="font-size: 50px;" class="fa-solid fa-glass-water"></i>
+                        <div>
+                            <p class="">Água Mineral</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">+ R$ 4,90</p>
+                        </div>
+                    </div>
+                    <div class="food bebida col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <i style="font-size: 50px;" class="fa-solid fa-wine-glass"></i>
+                        <div>
+                            <p class="">Vinho</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">+ R$ 34,90</p>
+                        </div>
+                    </div>
+                    <div class="food bebida col-lg-3 d-flex flex-column justify-content-between align-items-center p-3">
+                        <i style="font-size: 50px;" class="fa-solid fa-slash"></i>
+                        <div>
+                            <p class="">Sem bebida</p>
+                            <p class="mb-0 px-2 bg-danger rounded-1">+ R$ 0,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-add btn btn-outline-light my-5 py-3 px-5 disabled">adicionar</button>
+        </section>
+
+        <div class="container pedido py-2">
+            <div class="w-75 mx-auto">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-ligth ">Pedido</span>
+                    <span class="contador badge bg-danger rounded-pill">0</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total</span>
+                        <strong>R$<span class="total">0,00</span></strong>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success py-3">Realizar pagamento</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer id="contato" class="text-center py-3 bg-dark text-white">
+        <div class="container mx-auto row">
+            <div class="text-start col-sm-4">
+                <address>Avenida Borges de Medeiros, 250, Porto Alegre, RS</address>
+                <p>(51) 3223-8900</p>
+                <p>massas@massas.com.br</p>
+            </div>
+            <div class="col-sm-4">
+                <div class="icons fs-4">
+                    <a href=""><i class="fa-brands fa-facebook-f link-light mx-1"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram link-light mx-1"></i></a>
+                </div>
+                <p>&copy; 2022 Massa! Ltda.</p>
+            </div>
+            <div class="col-sm-4">
+                <img class="img-fluid" src="/images/pagamento.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Poppers -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <!-- Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/cart.js"></script>
+</body>
+
+</html>
