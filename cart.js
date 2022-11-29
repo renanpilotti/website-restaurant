@@ -1,16 +1,17 @@
 //fluxo de compra
-$('.section, .pedido').addClass('collapse').hide();
+$('.section, .pedido').hide();
 
 $('.massa').click(function () {
     selecionaItem(this);
-    $('.section:first').removeClass('collapse').show(1000);
-    $(document).scrollTop($(document).height());
+    $('.section:first').show(1000);
+    setTimeout(() => $(document).scrollTop($(document).height()), 300)
 })
+
 
 $('.molho').click(function () {
     selecionaItem(this);
-    $('.section:last').removeClass('collapse').show(1000);
-    $(document).scrollTop($(document).height());
+    $('.section:last').show(1000);
+    setTimeout(() => $(document).scrollTop($(document).height()), 300)
 })
 
 $('.bebida').click(function () {
@@ -37,18 +38,17 @@ $('.btn-add').click(function () {
     //atualiza soma total
     $('.total').text(valTotal.toFixed(2).toString().replace('.', ','));
 
-    //reinicia fluxo
-    $('.pedido').removeClass('collapse').show(1000);
-    $('.food').removeClass('active nao-selecionado');
-    $('.section').addClass('collapse').hide();
-    $('.btn-add').addClass('disabled');
-
+    //mostra pedido e atualiza contador
+    $('.pedido').show(1000);
     $('.contador').text(contador);
 
-    $(document).scrollTop($(document).height());
+    //reinicia fluxo
+    $('.food').removeClass('active nao-selecionado');
+    $('.section').hide();
+    $('.btn-add').addClass('disabled');
 })
 
-//função que recebe strings e as transoforma em número, realiza somas e retorna elementos html
+//função que recebe strings e as transforma em número, realiza somas e retorna elementos HTML
 function retornaElem(massa, molho, bebida, precoMassa, precoMolho, precoBebida) {
 
     let priceOne = Number(precoMassa.replace('R$', '').replace(',', '.'));
